@@ -87,7 +87,7 @@ function setUp () {// Make an Array of 30 pAequor Objects that have 60% or more 
   for(let i=0; i<30; i++) {
     let name = 'pAequor' + i;
     name = pAequorFactory(i, mockUpStrand())
-    while (!name.willLikelySurvive()){ // Check if the pAequor Object can survive, if not, create anothe one.
+    while (!name.willLikelySurvive()){ // Check if the pAequor Object can survive, if not, create another one.
       name = pAequorFactory(i, mockUpStrand());
     }
     arrayPaequor.push(name);
